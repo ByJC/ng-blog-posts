@@ -1,0 +1,35 @@
+<div [class.m2app-dark]="isDarkTheme">
+	<md-toolbar color="primary">
+		NG-BLOG-POSTS
+
+		<span class="app-toolbar-filler"></span>
+	</md-toolbar>
+</div>
+
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+
+	<md-sidenav #start (open)="closeStartButton.focus()" mode="side" opened="true">
+		<br/>
+		<ul>
+			<li>
+				<a routerLink="/home">Home</a>
+			</li>
+			<li>
+				<a routerLink="/about">About</a>
+			</li>
+			<li>
+				<a routerLink="/example">Exemple Observable</a>
+			</li>
+		</ul>
+
+	</md-sidenav>
+	<app-progressbar></app-progressbar>
+	<div class="app-content">
+
+		<router-outlet></router-outlet>
+
+	</div>
+</md-sidenav-layout>
+<span class="app-action" [class.m2app-dark]="isDarkTheme">
+  <button md-fab><md-icon>check circle</md-icon></button>
+</span>

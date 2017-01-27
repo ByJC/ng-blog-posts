@@ -1,0 +1,111 @@
+.active {
+    background-color: salmon;
+}
+md-sidenav{
+  background: #455161;
+  width: 200px;
+}
+md-sidenav ul {
+  padding: 18px 0 0 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+md-sidenav ul li {
+  position:relative;
+}
+
+md-sidenav ul li a, a:visited, a:active {
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 20px 11px;
+  display: block;
+  color:#9F9FA9;
+  text-decoration:none;
+  font-size:12px;
+  outline: none;
+  transition:padding 0.5s ease;
+}
+
+ md-sidenav ul li a:hover {
+    background:#3B4755;
+}
+          
+
+
+md-sidenav-layout{
+  height: 100%;
+}
+md-sidenav-layout.m2app-dark {
+  background: black;
+}
+
+.app-content {
+  padding: 20px;
+}
+
+.app-content md-card {
+  margin: 20px;
+}
+
+.app-sidenav {
+  padding: 10px;
+  min-width: 100px;
+}
+
+.app-content md-checkbox {
+  margin: 10px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.app-input-icon {
+  font-size: 16px;
+}
+
+.app-list {
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 350px;
+  margin: 20px;
+}
+
+.app-progress {
+  margin: 20px;
+}
