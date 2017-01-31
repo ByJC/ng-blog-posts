@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'about', loadChildren: './+about/about.module#AboutModule' },
-  { path: 'example', loadChildren: './+example/example.module#ExampleModule' }
+  { path: 'example', loadChildren: './+example/example.module#ExampleModule' },
+  { path: 'example2', loadChildren: './+ex.formcontrol/ex.formcontrol.module#ExFormControlModule' }
 ];
 
 @NgModule({

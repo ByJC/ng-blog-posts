@@ -1,0 +1,15 @@
+<md-card><h1>Exemple FormControl</h1></md-card>
+
+<md-card>
+     input avec un formControl permettant de rechercher les utilisateurs Github parisien <br/>
+     Min. 3 caractères <br/>
+     <br/>
+    <input [formControl]="myControl" [(ngModel)]="search">
+</md-card>
+
+<md-card>
+    <h4>Résultats</h4>
+    <div *ngFor="let profil of profiles | async">
+       <a href="{{profil.url}}"> <strong>{{profil.login}}</strong></a>
+    </div>
+</md-card>
