@@ -1,0 +1,23 @@
+<md-card>
+  <h1> Formulaire de création d'une campagne </h1>
+</md-card>
+
+<md-card>
+  <form novalidate [formGroup]="campaign" (ngSubmit)="onSubmit(campaign);">
+    <md-input-container>
+      <input md-input type="text" name="name" formControlName="name" placeholder="Campaign's name">
+    </md-input-container>
+    <br/>
+    <div formGroupName="content">
+      <md-input-container>
+        <input md-input type="url" name="url" formControlName="url" placeholder="Campaign's url">
+      </md-input-container>
+      <br/>
+      <md-input-container>
+        <input md-input type="number" name="price" formControlName="price" placeholder="Campaign's price">
+      </md-input-container>
+    </div>
+    <br/>
+    <button type="submit" [disabled]="campaign.invalid">Submit</button>
+  </form>
+</md-card>
