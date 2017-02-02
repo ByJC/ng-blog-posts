@@ -10,8 +10,7 @@ export class ProgressBarService {
               .asObservable()
               .do(changes => console.log('new state', changes)); 
     
-  constructor(private http: Http) {
-  }
+  constructor(private http: Http) { }
   show() {
     this.subject.next(true);
   }
